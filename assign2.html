@@ -1,0 +1,60 @@
+<html>
+	
+	<head>
+		  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	</head>
+
+	<body>
+		
+		<div class="container">
+			 <div class="col-sm-4"></div>
+			 	 <div class="col-sm-4 well">
+			 	 	   <div class="row">
+			 	 	   	   <h2>create a blog</h2>
+			 	 	   </div>
+			 	 	   <br>
+			 	 	   <form action="asign1.html" >
+			 	 	   <div class="row">
+			 	 	   	   <input type="text" placeholder="title" id="sri" >
+			 	 	   </div>
+			 	 	   <br>
+			 	 	   <div class="row">
+			 	 	   	   
+			 	 	   		<textarea placeholder="content" class="form-control" id="sou"></textarea>
+			 	 	  
+
+			 	 	   </div>
+
+			 	 	   <br>
+			 	 	   <div class="row" align="center">
+                       <a href="asign1.html"><button type="button" class="btn btn-primary" onclick="save()">save</button></a>
+                       </form>
+
+
+                         <button type="button" class="btn btn-danger">cancel</button>
+			 	 	</div>
+			 	 	<div>
+			 	 </div>
+			 	 	 <div class="col-sm-4"></div>
+		</div>
+	</body>
+	<script>
+		  function save(){
+            var pro=document.getElementById("sou").value;
+              var pro1=document.getElementById("sri").value;
+            localStorage.setItem("textvalue1",pro);
+            localStorage.setItem("textvalue",pro1);
+             
+                  }
+
+	</script>
+</html>

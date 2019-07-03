@@ -1,0 +1,125 @@
+<html>
+   <head>
+   <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <style>
+    	
+    	*{
+    		padding: 0;
+    		margin:0;
+    	}
+    	button{
+    		float:right;
+
+    	}
+    	span{
+    		color:white;
+    	}
+    	
+    	h3{
+    		margin-top: 10px;
+    	}
+    	.ss{
+    		float:right;
+    	}
+    	h1{
+            background: blue;
+            color:red;
+    	}
+    	h1:hover::after{
+    		content:"Assignments";
+
+    	}
+    	.reset1{
+    		margin-left:100px; 
+    	}
+    	body{
+    		background: black;
+    	}
+    </style>
+   </head>
+     <body>
+     	   <h1>Neutrinous</h1>
+     	   <form>
+	     <div class="container">
+		     <div class="col-sm-2"></div>
+			    <div class="col-sm-8 well">
+				   <div class="row">
+				      <div class="col-sm-4">
+				      	<h3>Blog Assignment</h3>
+				      </div>
+                      <div class="col-sm-4"></div>
+				      <div class="col-sm-4">
+				      	<button class="btn btn-primary"><a href="assign2.html">create</a></button>
+				      	<button class="btn btn-warning" type="reset">Reset</button>
+				      </div>
+				   </div>
+
+				   <div class="row">
+				   	 <div class="col-sm-6">
+				      	<input type="text" placeholder="title" id="back1">
+				      </div>
+
+				      <div class="col-sm-6">
+				      	 <button class="ss"><a href="asign3.html">Edit</a><i class="far fa-edit ss"></i></button>
+
+				      </div>
+                      
+				   </div>
+                    <br>
+				    <div class="row">
+				   	 <div class="col-sm-12">
+
+				   	 	
+				      	<textarea placeholder="content" class="form-control" id="back2"></textarea>
+				      
+				      </div>
+
+				      </div>
+                          <br>
+				       <div class="row">
+				   	 <div class="col-sm-6">
+				      	<input type="text" placeholder="title">
+				      </div>
+
+				      <div class="col-sm-6">
+				      	  <button class="ss"><a href="asign3.html">Edit</a><i class="far fa-edit ss"></i></button>
+
+				      </div>
+                      
+				   </div>
+                       <br>
+
+				       <div class="row">
+				   	 <div class="col-sm-12">
+				      	<textarea placeholder="content" class="form-control"></textarea>
+				      </div>
+
+				      </div>
+				</div>
+				<div class="col-sm-2"></div>
+			 </div>
+		 </div>
+
+		 </form>
+       <script>
+       	
+       	/*document.getElementById("back1").innerHTML=localStorage.getItem("textvalue1");
+       	  	document.getElementById("back2").innerHTML=localStorage.getItem("textvalue");*/
+
+       	  	var mm = localStorage.getItem("textvalue");
+       	  	 	var mm1 = localStorage.getItem("textvalue1");
+
+       	  	 	document.getElementById("back1").value=mm;
+       	  	 		document.getElementById("back2").value=mm1;
+       </script>
+	 </body>
+</html>
